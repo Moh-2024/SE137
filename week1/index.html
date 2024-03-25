@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week1</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div id = "nav">
+        <a href = "#">Link 1</a>
+        <a href = "#">Link 2</a>
+        <a href = "#">Link 3</a>
+    </div>
+    <div class = "section">div 1</div>
+    <div class = "section hide">div 2</div>
+    <div class = "section hide">div 3</div>
+
+    <script>
+        var a = Array.from(document.querySelectorAll(`#nav a`));
+        var div = document.querySelectorAll(`.section`)
+        console.log(div)
+        for(let i = 0; i < a.length; i++){
+            a[i].addEventListener(`click`, handler)
+        }
+        function handler(e){
+            e.preventDefault();
+            e.target.style.color = `red`;
+
+            for(let i = 0; i < e.length; i++){
+                div[i].classList.add(`hide`);
+            }
+
+            div[a.indexOf(e.target)].classList.remove(`hide`);
+
+        }
+
+
+    </script>
+</body>
+</html>
