@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Week 2 Bio Assignment">
+    <meta name="author" content="Mohammed Malek">
+    <title>Mohammed Malek</title>
+</head>
+<div id = "header" >
+    <h1>Mohammed Malek</h1>
+</div>
+<style>
+    body{
+            background-color: lightslategray;
+    }
+    .hide{
+        display: none;
+        }
+</style>
+<body>
+   <div id = "nav" >
+        <a href="#"><i>Bio</i></a>
+        <a href="#"><i>Schools</i></a>
+        <a href="#"><i>Hobbies</i></a>
+    </div> 
+    <div id = "main">
+        <!--Bio Info-->
+        <div id = "Bio">
+            <h2>Bio</h2>
+            <hr>
+            <p>
+                My name is <i>Mohammed Malek</i>, I am currently studying software engineering at <b>New England Tech</b>. I am excited about expanding my knowledge
+                and skills in the field. Outside of school, I have a <strong>strong interest in health and fitness</strong>. I believe in maintaining a active lifestyle. In my free time, I also 
+                enjoy gaming. 
+            </p>
+        </div> 
+        <!--List of Schools-->
+        <div id = "Schools" class = "hide">
+            <h2>Schools</h2>
+            <hr>
+                <ol>
+                    <li>Delsesto Middle school</li>
+                    <li>Cooley Health and Science High School</li>
+                    <li>CCRI</li>
+                    <li> <a href="https://www.neit.edu/?utm_source=google&utm_medium=cpc&ctcampaign=7834&ctkwd=new%20england%20tech%20college&ctcreative=669040278718&ctplacement=&ctadpos=&ctmatch=p&ctlocid=9002245&cttrgtid=kwd-319204205949&ctfeedid=&ctnwk=g&ctdevice=c&gad_source=1&gclid=Cj0KCQiAwbitBhDIARIsABfFYIKR3RY0l6LI1XRwJSjbkpgkNSGJ73UqSIh9ak_U3JfCcdWYTyD-ZaMaAm-fEALw_wcB"
+                        target="_blank"><b>New England Tech</b></a></li>
+                    
+                </ol>
+                <img src="../week1_bio/images/ccri-logo.jpg" alt="CCRI" width = "500">
+                <img src="../week1_bio/images/New_England_Tech_Logo.png" alt="New England Tech" width="500">
+        </div>
+        <!--List of Hobbies-->
+        <div id = "Hobbies" class = "hide">
+            <h2>Hobbies</h2>
+            <hr>
+                <ul>
+                    <li>Health and fitness</li>
+                    <li>Gaming</li>
+                    <li>Pickle Ball</li>
+                    <li>Coding</li>             
+                </ul>
+        </div>    
+    
+        <footer id = "footer" style="text-align: center;">
+            <p>&copy;Mohammed | SE137 | 2024</p>
+            <br>
+        </footer>
+    </div>
+    <script>
+        var a = Array.from(document.querySelectorAll(`#nav a`));
+        var div = document.querySelectorAll(`#main div`)
+        console.log(div)
+        for(let i = 0; i < a.length; i++){
+            a[i].addEventListener(`click`, handler)
+        }
+        function handler(e){
+            e.preventDefault();
+            e.target.style.color = `red`;
+            console.log(e.currentTarget)
+
+            for(let i = 0; i < div.length; i++){
+                div[i].classList.add(`hide`);
+            }
+            
+
+            div[a.indexOf(e.currentTarget)].classList.remove(`hide`);
+
+
+        }
+
+
+    </script>
+</body>
+</html>

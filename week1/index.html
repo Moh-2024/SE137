@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week1</title>
     <style>
-
+        .hide{
+        display: none;
+        }
     </style>
 </head>
 <body>
@@ -21,7 +23,7 @@
     <script>
         var a = Array.from(document.querySelectorAll(`#nav a`));
         var div = document.querySelectorAll(`.section`)
-        console.log(div)
+
         for(let i = 0; i < a.length; i++){
             a[i].addEventListener(`click`, handler)
         }
@@ -29,7 +31,7 @@
             e.preventDefault();
             e.target.style.color = `red`;
 
-            for(let i = 0; i < e.length; i++){
+            for(let i = 0; i < div.length; i++){
                 div[i].classList.add(`hide`);
             }
 
