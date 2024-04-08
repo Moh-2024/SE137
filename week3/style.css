@@ -1,0 +1,42 @@
+body, html{
+    background-color: lightgray;
+    height: 100%;
+    margin:0;
+}
+body{
+    color: aqua;
+    min-height: 100%;
+}
+main{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 50px 300px 50px;
+}
+header{
+    background-color: red;
+
+}
+nav{
+   background-color: black;
+}
+section{
+ background-color: grey;
+ display: grid;
+ grid-template-areas: "article div aside";
+}
+article{
+background-color: hotpink;
+grid-area: article;
+}
+div{
+background-color: cyan;
+grid-area: div;
+}
+aside{
+    background-color: yellow;
+    grid-area: aside;
+
+}
+footer{
+    background-color: black;
+}
