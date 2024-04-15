@@ -34,8 +34,7 @@ main{
 .Hobbies{
     grid-area: hobbies;
     background-image: url('../week3_bio/images/Bluecoats-8562.jpg');
-    background-size:cover;
-    background-repeat: no-repeat;
+    background-size: relative;
     border: 2px solid black;
     padding-bottom: 30px;
     padding-left: 5px;
