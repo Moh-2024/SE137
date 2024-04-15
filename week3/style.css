@@ -22,7 +22,9 @@ nav{
 section{
  background-color: grey;
  display: grid;
- grid-template-areas: "article div aside";
+ grid-template-areas: 
+ "article article article"
+ "div div aside";
 }
 article{
 background-color: hotpink;
