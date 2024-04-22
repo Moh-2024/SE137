@@ -1,0 +1,65 @@
+body{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 100px 100px;
+    background-color: black;
+    min-height: 100%;
+    width:1820px;
+    height: 100px;
+}
+main{
+    display:grid;
+    grid-template-areas: "one one two"
+    "three three ";
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+header h1{
+    color: red;
+    margin: 0;
+}
+header nav{
+    display: flex;
+    padding: 16px;
+}
+#one{
+    width:1440px;
+}
+#one img{
+    grid-area: one;
+    width:1440px;
+    height:388px;
+}
+#two img{
+    grid-area: two;
+    width: 325px;
+    height: 254px;;
+
+}
+#three img{
+    grid-area: three;
+    width:100px;
+}
+#three{
+display: flex;
+background-image: url('../week4_Crystal/f13_images/dvd.png');
+background-position: bottom;
+background-size: 117px 148px;
+background-repeat: no-repeat;
+}
+#three p{
+    display: flex;
+    padding: 16px;
+    width: 310px;
+    height:478px;
+}
+p{
+    color: white;
+    padding: 20px;
+}
+footer{
+    color:white;
+}
