@@ -1,16 +1,8 @@
 body{
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100px 100px 100px;
     background-color: black;
-    min-height: 100%;
     width:1820px;
     height: 100px;
-}
-main{
-    display:grid;
-    grid-template-areas: "one one two"
-    "three three ";
 }
 header{
     display:flex;
@@ -25,41 +17,104 @@ header nav{
     display: flex;
     padding: 16px;
 }
-#one{
-    width:1440px;
+main{
+    display:grid;
+    grid-template-columns:auto auto auto;
+    grid-template-areas: "one one four"
+    "two three four"
+    "two three four"
+    "footer footer footer";
 }
-#one img{
+.One{
     grid-area: one;
-    width:1440px;
+    width: 1440px;
     height:388px;
+    background-image: url('../week4_Crystal/f13_images/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -85px;
 }
-#two img{
+.two{
     grid-area: two;
-    width: 325px;
-    height: 254px;;
-
-}
-#three img{
-    grid-area: three;
-    width:100px;
-}
-#three{
-display: flex;
-background-image: url('../week4_Crystal/f13_images/dvd.png');
-background-position: bottom;
-background-size: 117px 148px;
-background-repeat: no-repeat;
-}
-#three p{
     display: flex;
-    padding: 16px;
+    width: 700px;
+    height:481px;
+    background-color: #393939;
+    border-top: 4px solid #BB0908;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.two h2{
+    font-size: 30px;
+    display: flex;
+    color:red;
+    width: 353px;
+    height:77px;
+    border-bottom: 4px  #BB0908;
+}
+.two p{
+    display: flex;
+    color:white;
+    width: 349px;
+}
+.two img{
     width: 310px;
     height:478px;
 }
-p{
+.two #dvd{
+    display: flex;
+}
+.two #dvd img{
+    width: 117px;
+    height:148px;
+    display: flex;
+}
+.two #dvd p{
+    font-size: 18px;
+    height:157px;
+}
+.two #dvd p b{
+    font-size: 72px;
+}
+.three{
+    grid-area: three;
+    width: 700px;
+    height:481px;
+    background-color: #393939;
+    border-top: 4px solid #BB0908;
+}
+.three p{
     color: white;
-    padding: 20px;
+    display: flex;
+    font-size: 24px;
+    padding: 16px;
+}
+.three img{
+    width: 641px;
+    height:229px;
+}
+.four{
+    grid-area: four;
+    width: 360px;
+    height:918px;
+}
+.four img{
+    display: flex;
+    width: 325px;
+    height:254px;
+}
+.four p{
+    color:white;
+}
+.four b{
+    color:red;
+}
+.four #underwater img{
+    display: flex;
+    width: 325px;
+    height:170px;
 }
 footer{
-    color:white;
+    color: white;
+    grid-area: footer;
 }

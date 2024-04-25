@@ -1,6 +1,9 @@
 @charset "UFC-8";
 #nav{
-    display: none;
+    text-align: center;
+}
+#nav a{
+    padding: 30px;
 }
 
 body{
@@ -8,7 +11,7 @@ body{
     grid-template-columns: 100%;
     grid-template-rows: 100px 50px 300px 50px;
     min-height: 100%;
-    background-color: beige ;
+    background-color: #FCBC90 ;
 
 }
 main{
@@ -23,6 +26,14 @@ main{
 
 #header {
     padding:10px;
+    border: 1px solid black;
+    width: 464px;
+    height: 68px;
+    left: 37px;
+    right: 593px;
+    top: 30px;
+    bottom: 710px;
+
     }
 .Bio{
     grid-area: bio;
