@@ -50,11 +50,9 @@ main{
     background-position-y: -85px;
 }
 .two {
+    grid-area: two;
     max-width: 700px;
     max-height: 481px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #393939;
     border-top: 4px solid #BB0908;
 }
@@ -70,25 +68,29 @@ main{
 .content {
     display: flex;
     flex-direction: column;
-    margin-left: 10px; 
 }
 .content h2{
     font-size: 30px;
     color: red;
     border-bottom: 4px solid #BB0908;
     font-family: "Rock salt",sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 .content p{
     font-size: 18px;
     color: white;
     padding: 16px;
     font-family: "Poppins", sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 #dvd {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 10px;
 }
 #dvd img{
     width: 117px;
@@ -96,17 +98,26 @@ main{
     padding: 16px;
 }
 .purchase {
-    display: flex;
-    flex-direction: column;
     margin-left: 10px;
+    text-align: center;
 }
 .purchase p{
     font-size: 18px;
+}
+.purchase p a{
+    font-size: 18px;
+    font-family: "poppins",sans-serif;
+    color: #22C1CB;
+    text-align: left;
 }
 
 .purchase b {
     margin-top: auto;
     font-size: 72px;
+    font-family: "Teko",sans-serif;
+    border-bottom: solid white;
+    text-align: left;
+    margin-bottom: 0;
 }
 
 .three{
