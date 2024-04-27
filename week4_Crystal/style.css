@@ -25,6 +25,7 @@ main{
     "two three four"
     "footer footer footer";
     background-color: #282828;
+    padding: 16px;
 }
 .One{
     grid-area: one;
