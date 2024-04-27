@@ -70,7 +70,7 @@ main{
 .content {
     display: flex;
     flex-direction: column;
-    margin-left: 10px; /* Adjust as needed */
+    margin-left: 10px; 
 }
 .content h2{
     font-size: 30px;
@@ -88,7 +88,7 @@ main{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 10px; /* Adjust as needed */
+    margin-top: 10px;
 }
 #dvd img{
     width: 117px;
@@ -98,14 +98,14 @@ main{
 .purchase {
     display: flex;
     flex-direction: column;
-    margin-left: 10px; /* Adjust as needed */
+    margin-left: 10px;
 }
 .purchase p{
     font-size: 18px;
 }
 
 .purchase b {
-    margin-top: auto; /* Pushes the price to the bottom */
+    margin-top: auto;
     font-size: 72px;
 }
 
