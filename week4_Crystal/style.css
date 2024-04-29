@@ -9,15 +9,10 @@ body{
     width:1820px;
     height: 100px;
 }
-.icon-link{
-    text-decoration: none;
-    color: red;
-}
 header{
     display:flex;
     justify-content: space-between;
     align-items: baseline;
-    padding: 16px;
 }
 header h1{
     color: red;
@@ -25,11 +20,16 @@ header h1{
     font-size: 48px;
     font-family: "Teko",sans-serif;
     text-align: left;
+    font-weight: 400;
 
 }
 header nav{
     display: flex;
     padding: 16px;
+}
+nav a{
+    padding:10px;
+    color: red;
 }
 main{
     display:grid;
@@ -55,6 +55,7 @@ main{
     max-height: 481px;
     background-color: #393939;
     border-top: 4px solid #BB0908;
+    margin-left: 16px;
 }
 
 .poster {
@@ -82,10 +83,11 @@ main{
 .content p{
     font-size: 18px;
     color: white;
-    padding: 16px;
+    padding-left: 16px;
     font-family: "Poppins", sans-serif;
     margin-top: 0;
     margin-bottom: 0;
+    box-sizing: border-box;
 }
 #dvd {
     display: flex;
@@ -126,6 +128,7 @@ main{
     height:481px;
     background-color: #393939;
     border-top: 4px solid #BB0908;
+    margin-left: 16px;
 }
 .three p{
     color: white;
@@ -144,6 +147,7 @@ main{
     height:918px;
     background-color: #393939;
     padding: 16px;
+    margin-left: 16px;
 }
 .four img{
     display: flex;
@@ -170,4 +174,6 @@ footer{
     font-size: 12px;
     text-align: left;
     font-family: "Teko", sans-serif;
+    background-color: black;
+    height: 60px;
 }
