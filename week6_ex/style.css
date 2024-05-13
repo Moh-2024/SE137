@@ -41,6 +41,14 @@ aside{
     justify-content: flex-end;
     overflow: hidden;
 }
+.tray div h3{
+border-bottom: 2px solid #505050;
+color: white;
+
+}
+.tray div ul{
+    color: white;
+}
 .hide{
     min-width: 0;
     width: 0;
