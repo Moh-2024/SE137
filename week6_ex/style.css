@@ -1,12 +1,4 @@
 
-button .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
-}
-
 html{
     height:100%;
 }
@@ -15,7 +7,6 @@ body{
     margin: 0;
 }
 main{
-    background-color: lime;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -24,6 +15,16 @@ header{
     height: 23px;
     background-color: #505050;
 }
+header ul {
+    list-style-type: none;
+    margin: 0;
+}
+  
+header li {
+    display: inline;
+    padding: 10px;
+    color: white;
+}
 section{
     height: 100%;
     display: flex;
@@ -31,6 +32,31 @@ section{
 aside{
     width: 45px;
     background-color: #505050;
+}
+button.dash{
+    background-image: url('images/tray.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 43px;
+    height: 33px;
+    background-position: center;
+}
+
+button.window{
+    background-image: url('images/tiles.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 43px;
+    height: 33px;
+    background-position: center;
+}
+button.trash{
+    background-image: url('images/trash.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 43px;
+    height: 33px;
+    background-position: center;
 }
 .tray{
     width: 144px;
@@ -41,10 +67,31 @@ aside{
     justify-content: flex-end;
     overflow: hidden;
 }
+ul li.paper{
+    list-style-type: none;
+    list-style-image: url('images/paper.png');
+}
+ul li:hover{
+    filter: brightness(70%);
+}
+ul li.fire{
+    list-style-type: none;
+    list-style-image: url('images/fire.png');
+}
+.tray div .material-symbols-outlined {
+    font-weight: bold;
+    vertical-align: top;
+}
 .tray div h3{
-border-bottom: 2px solid #505050;
-color: white;
+    margin-top: 0;
+    padding: 10px;
+    border-top: 2px solid white ;
+    border-bottom: 2px solid #505050;
+    color: white;
+}
 
+.tray div .material-symbols-outlined:hover{
+    filter: brightness(70%);
 }
 .tray div ul{
     color: white;
@@ -56,12 +103,10 @@ color: white;
 }
 div.tray div{
     box-sizing: border-box;
-    border: 5px solid cyan;
     width: 144px;
     min-width: 144px;
 }
 #program{
-    background-color: blueviolet;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -73,7 +118,7 @@ nav{
 }
 button{
     width: 173px;
-    background-color: #373737;
+    background-color: #505050;
     border: 0 solid black;
     margin-right: 2px;
     color:white;
