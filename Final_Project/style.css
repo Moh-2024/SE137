@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    transition: 1s;
+}
+/* Hide the navbar items and toggler on larger screens */
+@media (min-width: 992px) {
+    #horizontalNavbar .navbar-nav,
+    #horizontalNavbar .navbar-toggler {
+    display: none !important;
+}
+}
+/* Ensure the sidebar is hidden on smaller screens */
+@media (max-width: 991px) {
+    #sidebar {
+    display: none;
+}
+}
+.container .row .col-sm{
+    height:50vh;
+    background-image: url('../Final_Project/images/pexels-ifreestock-585752.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
