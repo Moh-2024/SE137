@@ -25,4 +25,14 @@ body{
     background-image: url('../Final_Project/images/pexels-ifreestock-585752.jpg');
     background-size: cover;
     background-position: bottom;
+    margin-bottom: 20px;
+}
+#info{
+    background-image: url('../Final_Project/images/IMG_3466.jpg');
+    background-size: contain;
+    height: 50vh;
+    background-repeat: no-repeat;
+}
+footer{
+    display: flex;
 }
