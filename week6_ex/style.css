@@ -12,6 +12,8 @@ main{
     flex-direction: column;
 }
 header{
+    display: flex;
+    justify-content: space-between;
     height: 23px;
     background-color: #505050;
 }
@@ -24,6 +26,11 @@ header li {
     display: inline;
     padding: 10px;
     color: white;
+}
+header p{
+    display: inline;
+    margin: 0;
+    margin-left: auto;
 }
 section{
     height: 100%;
@@ -57,6 +64,7 @@ button.trash{
     width: 43px;
     height: 33px;
     background-position: center;
+    
 }
 .tray{
     width: 144px;
@@ -127,6 +135,9 @@ button{
 button:last-child{
     margin:0;
 }
+.trash{
+    margin-top: 50px;
+}
 .active{
     background-color: #161616;
 }
@@ -147,4 +158,8 @@ footer{
     height: 16px;
     background-color: #0254A0;
     border-top: 1px solid white;
+}
+footer p{
+    display: inline;
+    margin-left: 20px;
 }

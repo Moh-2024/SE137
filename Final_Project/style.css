@@ -1,11 +1,17 @@
 @charset "UTF-8";
 
-html{
+html, body {
     height: 100%;
 }
-body{
-    height: 100%;
-    transition: 1s;
+body {
+    display: flex;
+    flex-direction: column;
+}
+.container-fluid {
+    flex: 1;
+}
+main {
+    flex: 1;
 }
 /* Hide the navbar items and toggler on larger screens */
 @media (min-width: 992px) {
@@ -35,4 +41,18 @@ body{
 }
 footer{
     display: flex;
+}
+.project-card {
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.project-card.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+.project-img {
+    height: 200px;
+    object-fit: cover;
 }

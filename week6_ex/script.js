@@ -1,28 +1,4 @@
-/*
-var buttons = document.querySelectorAll(`nav button`);
 
-for(let i = 0; i <buttons.length; i++){
-    buttons[i].addEventListener(`click`, butts)
-}
-function butts(e){
-    for(let i = 0; i <buttons.length; i++){
-       buttons[i].classList.remove(`active`)
-    }
-    e.target.classList.add(`active`)
-    document.querySelectorAll(`breadcrumbs`).innerHTML = `<a href = "#">${e.target.innerHTML}</a>`
-}
-
-var dropDownButton = document.querySelectorAll(`aside button`)
-dropDownButton.addEventListener(`click`, toggle)
-function toggle(e)
-{
-    document.querySelector(`.tray`).classList.toggle(`hide`)
-}
-//dropDownButton.addEventListener(`click`, e=>{
-   // document.querySelector(`.tray`).classList.toggle(`hide`);
-
-//})
-*/
 
 //reference to the button that opens and closes the tray
 var trayButton = document.querySelector(`aside button:first-child`)
